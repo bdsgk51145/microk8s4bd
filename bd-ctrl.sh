@@ -68,6 +68,6 @@ elif [ "$1" = "uninstall" ]; then
 elif [ "$1" = "clean" ]; then
 	bd_clean
 else
-	echo "Usage: ./bd-microk8s.sh [install/upgrade/uninstall]"
+	echo "Usage: ./bd-ctrl.sh [install/upgrade/uninstall]"
 fi
 
