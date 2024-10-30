@@ -14,8 +14,8 @@ function registry_setup() {
 	#echo -n "Password: "
 	#read IBH_PASSWORD
 
-	IBH_USERNAME="masao"
-	IBH_PASSWORD="wa09I0Bv6se9nT6XJC0Kgg3Ei2gthjQC"
+	IBH_USERNAME=""
+	IBH_PASSWORD=""
 	microk8s kubectl create secret docker-registry ${SKR_RN}-seeker-register-secret --docker-server=registry1.dso.mil --docker-username=$IBH_USERNAME --docker-password=$IBH_PASSWORD --namespace ${SKR_NS}
 }
 function db_setup() {
